@@ -3,92 +3,96 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> Tamanna Islam Labonno | Portfolio</title>
+<title>Tamanna Islam Labonno | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #f5f7fa;
-        color: #333;
+    body{
+        margin:0;
+        font-family:'Poppins', sans-serif;
+        background: linear-gradient(135deg, #141e30, #243b55);
+        color:white;
     }
 
-    header {
-        background: linear-gradient(135deg, #4e54c8, #8f94fb);
-        color: white;
-        text-align: center;
-        padding: 50px 20px 70px;
+    header{
+        text-align:center;
+        padding:60px 20px;
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
     }
 
-    header h1 {
-        margin: 0;
-        font-size: 36px;
+    header h1{
+        font-size:42px;
+        margin:0;
     }
 
-    header p {
-        margin-top: 10px;
-        font-size: 18px;
+    header p{
+        font-size:18px;
+        opacity:0.9;
     }
 
-    .photo-container {
-        text-align: center;
-        margin-top: -60px;
-        margin-bottom: 10px;
+    .photo{
+        text-align:center;
+        margin-top:-50px;
     }
 
-    .photo-container img {
-        width: 140px;
-        height: 140px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 5px solid white;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    .photo img{
+        width:150px;
+        height:150px;
+        border-radius:50%;
+        border:4px solid white;
+        object-fit:cover;
     }
 
-    section {
-        max-width: 800px;
-        margin: 20px auto;
-        background: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    section{
+        max-width:900px;
+        margin:30px auto;
+        background: rgba(255,255,255,0.08);
+        padding:20px;
+        border-radius:12px;
+        box-shadow:0 0 15px rgba(0,0,0,0.4);
     }
 
-    h2 {
-        border-bottom: 2px solid #4e54c8;
-        padding-bottom: 5px;
+    h2{
+        color:#00e5ff;
+        border-bottom:2px solid #00e5ff;
+        padding-bottom:5px;
     }
 
-    ul {
-        padding-left: 20px;
+    .skills span{
+        display:inline-block;
+        background:#00e5ff;
+        color:black;
+        padding:8px 15px;
+        margin:5px;
+        border-radius:20px;
+        font-weight:bold;
     }
 
-    .project {
-        margin-bottom: 10px;
-        padding: 10px;
-        background: #f0f3ff;
-        border-radius: 5px;
-        transition: 0.3s;
+    .project{
+        background: rgba(255,255,255,0.1);
+        padding:15px;
+        margin:10px 0;
+        border-radius:10px;
+        transition:0.3s;
+        border-left:4px solid #00e5ff;
     }
 
-    .project:hover {
-        transform: translateY(-5px);
+    .project:hover{
+        transform:scale(1.03);
+        background: rgba(0,229,255,0.2);
     }
 
-    footer {
-        text-align: center;
-        padding: 15px;
-        font-size: 14px;
-        color: gray;
+    a{
+        color:#00e5ff;
+        text-decoration:none;
     }
 
-    a {
-        color: #4e54c8;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
+    footer{
+        text-align:center;
+        padding:15px;
+        font-size:14px;
+        opacity:0.7;
     }
 </style>
 
@@ -98,61 +102,63 @@
 
 <header>
     <h1>Tamanna Islam Labonno</h1>
-    <p>Student | Beginner Programmer</p>
+    <p>Computer Science Student | Beginner Programmer | Future Network Engineer</p>
 </header>
 
-<div class="photo-container">
+<div class="photo">
     <img src="profile.jpg" alt="Profile Photo">
 </div>
 
 <section>
     <h2>About Me</h2>
     <p>
-        I am a passionate student interested in programming and technology. 
-        I enjoy learning new programming languages and building practical projects 
-        that solve real-world problems.
+        I am a Computer Science student passionate about programming, networking, and web development. 
+        I love building creative projects and learning new technologies.
     </p>
 </section>
 
 <section>
     <h2>Skills</h2>
-    <ul>
-        <li>C</li>
-        <li>C++</li>
-        <li>JavaScript</li>
-        <li>PHP</li>
-        <li>Python</li>
-        <li>HTML</li>
-    </ul>
+    <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Java</span>
+        <span>C++</span>
+        <span>Python</span>
+        <span>Networking</span>
+    </div>
 </section>
 
 <section>
     <h2>Projects</h2>
 
     <div class="project">
-        <strong>Blood Bank Management System</strong><br>
-        A web-based system to manage donors, blood inventory, and requests.
+        <h3>🌱 AgriSustain</h3>
+        <p>
+            A smart agriculture awareness project that promotes sustainable farming practices, 
+            helps farmers learn modern techniques, and improves agricultural productivity in Bangladesh.
+        </p>
     </div>
 
     <div class="project">
-        <strong>Online Movie Ticket Booking System</strong><br>
-        A platform for booking movie tickets with seat selection functionality.
+        <h3>🍔 Koikhabo</h3>
+        <p>
+            A food discovery and recommendation project that helps users find nearby restaurants, 
+            popular food places, and suggests food options based on location and taste.
+        </p>
     </div>
 
-    <div class="project">
-        <strong>Smart Classroom System</strong><br>
-        An Arduino-based system using sensors for automation and monitoring.
-    </div>
 </section>
 
 <section>
     <h2>Contact</h2>
-    <p>Phone: <a href="tel:01537145444">01537145444</a></p>
-    <p>Email: <a href="mailto:tamannaislam2031@gmail.com">tamannaislam2031@gmail.com</a></p>
+    <p>📞 Phone: 01537145444</p>
+    <p>📧 Email: tamannaislam2031@gmail.com</p>
+    <p>🔗 GitHub: <a href="#">github.com/tammaaa</a></p>
 </section>
 
 <footer>
-    © 2026 Tamanna Islam Labonno
+    © 2026 Tamanna Islam Labonno | All Rights Reserved
 </footer>
 
 </body>
